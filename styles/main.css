@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/**COLORES**/
+/**FUENTES**/
+/**TAMAÑO DE FUENTES**/
+/**BREAKPOINTS**/
+/*NORMALIZE*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; }
+
+body {
+  font-family: "Noto Sans Display", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Noto Sans Display", sans-serif; }
+
+@media screen and (max-width: 992px) {
+  nav {
+    height: 100% !important;
+    width: 100% !important; }
+  .spanNav {
+    display: none; }
+  .nav-link {
+    align-items: center !important; }
+  .fontMainContainer {
+    font-size: 18px !important; }
+  h2 {
+    font-size: 20px !important; }
+  h3 {
+    font-size: 35px !important; }
+  h4 {
+    font-size: 35px !important; } }
+
+@media screen and (max-width: 576px) {
+  nav {
+    height: 100% !important;
+    width: 100% !important; }
+  .spanNav {
+    display: none; }
+  .nav-link {
+    align-items: center !important; }
+  .fontMainContainer {
+    font-size: 18px !important; }
+  h3 {
+    font-size: 35px !important; }
+  h4 {
+    font-size: 35px !important; } }
+
+/*MIXINS*/
+/*NAV*/
+.navbar {
+  height: 100px; }
+
+#navColor {
+  background-color: #1b4a6d; }
+
+.nav-link {
+  padding-left: 8px;
+  padding-right: 8px; }
+
+a {
+  color: white; }
+  a:hover {
+    font-size: large;
+    padding: 0; }
+
+.colorNavLink:hover {
+  color: #99c3e4;
+  font-weight: bold; }
+
+/*HEADER*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.imgHeader {
+  height: 500px;
+  padding-top: 3%; }
+
+/*HOME*/
+.fontMainContainer {
+  font-size: 20px; }
+
+h1 {
+  color: #1b4a6d;
+  font-weight: bold; }
+
+h2 {
+  font-size: 28px;
+  color: #1b4a6d;
+  font-weight: bold;
+  font-family: "Noto Sans Display", sans-serif; }
+
+h3 {
+  color: #1b4a6d;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Bebas Neue"; }
+
+h4 {
+  color: #1b4a6d;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Bebas Neue"; }
+
+.itemCarousel {
+  height: 50%;
+  font-size: 20px;
+  transition: font-size 25; }
+
+.carousel-item:hover {
+  font-size: 40px; }
+
+.carouselText {
+  text-align: center;
+  background-color: gray;
+  font-family: "Faustina";
+  text-transform: uppercase; }
+
+.imgSistemasConstructivos {
+  height: 400px; }
+
+.card:hover {
+  transform: scale(1.2, 1.2); }
+
+.card-title {
+  position: relative;
+  margin-top: 250px;
+  color: white;
+  background-color: gray;
+  font-family: "Faustina";
+  text-transform: uppercase; }
+
+.card-img {
+  height: 300px; }
+
+/*FOOTER*/
+footer {
+  margin-top: 80px;
+  background-color: #1b4a6d;
+  color: white; }
+
+textarea {
+  resize: none; }
+
+#contactFooter {
+  font-size: 40px;
+  font-family: "Noto Sans Display", sans-serif; }
+
+.inputFormAspects:focus {
+  background-color: #d2c6b6;
+  font-size: 20px;
+  font-weight: bold;
+  height: 70px; }
+
+.textAreaFormAspects:focus {
+  background-color: #d2c6b6;
+  font-size: 20px;
+  font-weight: bold;
+  height: 300px; }
+
+#text-allRigts {
+  padding-top: 30px;
+  font-size: 12px; }
+
+svg {
+  justify-content: center; }

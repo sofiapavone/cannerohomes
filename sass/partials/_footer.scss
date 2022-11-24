@@ -1,0 +1,36 @@
+footer {
+	margin-top: 80px;
+	background-color: $color-primary;
+	color: $color-secondary;
+}
+textarea {
+	resize: none;
+}
+#contactFooter {
+	font-size: 40px;
+	font-family: $font-principal;
+}
+.inputFormAspects {
+	&:focus {
+		background-color: $label-color;
+		font-size: $small;
+		font-weight: $bold;
+		height: 70px;
+	}
+}
+.textAreaFormAspects {
+	&:focus {
+		background-color: $label-color;
+		font-size: $small;
+		font-weight: $bold;
+		height: 300px;
+	}
+}
+#text-allRigts {
+	padding-top: 30px;
+	font-size: $extrasmall;
+}
+
+svg {
+	justify-content: center;
+}

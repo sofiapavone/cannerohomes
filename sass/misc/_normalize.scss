@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+body{
+    font-family: $font-principal;
+}
+
+a{
+    text-decoration: none;
+    color: $color-secondary;
+    font-family: $font-principal;
+}
+
+@media screen and (max-width:$lg) {
+	nav {
+		height: 100% !important;
+		width: 100% !important;
+	}
+	.spanNav {
+		display: none;
+	}
+	.nav-link {
+		align-items: center !important;
+	}
+	.fontMainContainer {
+		font-size: 18px !important;
+	}
+	h2 {
+		font-size: 20px !important;
+	}
+	h3 {
+		font-size: 35px !important;
+	}
+	h4 {
+		font-size: 35px !important;
+	}
+}
+@media screen and (max-width:$sm) {
+	nav {
+		height: 100% !important;
+		width: 100% !important;
+	}
+	.spanNav {
+		display: none;
+	}
+	.nav-link {
+		align-items: center !important;
+	}
+	.fontMainContainer {
+		font-size: 18px !important;
+	}
+	h3 {
+		font-size: 35px !important;
+	}
+	h4 {
+		font-size: 35px !important;
+	}
+}

@@ -154,7 +154,7 @@ svg{
     justify-content: center;
 }
 
-@media screen and (max-width:990px){
+@media screen and (max-width:992px){
     nav{
         height: 100%!important;
         width: 100%!important;
@@ -179,7 +179,7 @@ svg{
     }
 }
 
- @media screen and (max-width:586px){
+ @media screen and (max-width:576px){
     nav{
        height: 100%!important;
        width: 100%!important;

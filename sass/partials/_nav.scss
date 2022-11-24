@@ -1,0 +1,23 @@
+.navbar {
+	height: 100px;
+}
+#navColor {
+	background-color: $color-primary;
+}
+.nav-link {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+a {
+	color: $color-secondary;
+	&:hover {
+		font-size: large;
+		padding: 0;
+	}
+}
+.colorNavLink {
+	&:hover {
+		color: $color-hover;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,62 @@
+.fontMainContainer {
+	font-size: 20px;
+}
+h1 {
+	color: $color-primary;
+	font-weight: $bold;
+}
+h2 {
+	font-size: $medium;
+	color: $color-primary;
+	font-weight: $bold;
+	font-family: $font-principal;
+}
+h3{
+	color: $color-primary;
+	font-weight: $bold;
+	font-size: $large;
+	font-family: $font-title-principal;
+}
+
+h4{
+    color: $color-primary;
+	font-weight: $bold;
+	font-size: $large;
+	font-family: $font-title-principal;
+}
+
+.itemCarousel {
+	height: 50%;
+	font-size: $small;
+	transition: font-size 25;
+}
+.carousel-item {
+	&:hover {
+		font-size: $large;
+	}
+}
+.carouselText {
+	text-align: center;
+	background-color: $background-secondary-color;
+	font-family: $font-description;
+    text-transform: uppercase;
+}
+.imgSistemasConstructivos {
+	height: 400px;
+}
+.card {
+	&:hover {
+		transform: scale(1.2,1.2);
+	}
+}
+.card-title {
+	position: relative;
+	margin-top: 250px;
+	color: $color-secondary;
+	background-color: $background-secondary-color;
+    font-family: $font-description;
+    text-transform: uppercase;
+}
+.card-img {
+	height: 300px;
+}
