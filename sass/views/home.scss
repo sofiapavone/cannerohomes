@@ -1,16 +1,41 @@
 .fontMainContainer {
-	font-size: 20px;
+	font-size: $small;
 }
 h1 {
 	color: $color-primary;
 	font-weight: $bold;
 }
+
+.servicios {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	justify-items: center;
+	text-align: center;
+	margin-top: 60px;
+	font-size: $small2;
+	color: $color-secondary;
+	gap: 10px;
+}
+
+.servicios {
+	div {
+		width: 90%;
+		background-color: $color-primary;
+		border-radius: 6px;
+	}
+	p {
+		line-height: 1;
+	}
+}
+
 h2 {
-	font-size: $medium;
-	color: $color-primary;
+	font-size: $medium2;
+	color: $color-secondary;
 	font-weight: $bold;
 	font-family: $font-principal;
+	margin-bottom: 20px;
 }
+
 h3{
 	color: $color-primary;
 	font-weight: $bold;
@@ -32,21 +57,22 @@ h4{
 }
 .carousel-item {
 	&:hover {
-		font-size: $large;
+		font-size: $medium2;
 	}
 }
 .carouselText {
 	text-align: center;
 	background-color: $background-secondary-color;
-	font-family: $font-description;
+	font-family: $font-principal;
     text-transform: uppercase;
+	font-weight: $bold;
 }
 .imgSistemasConstructivos {
 	height: 400px;
 }
 .card {
 	&:hover {
-		transform: scale(1.2,1.2);
+		transform: scale(1.1,1.1);
 	}
 }
 .card-title {
@@ -54,9 +80,105 @@ h4{
 	margin-top: 250px;
 	color: $color-secondary;
 	background-color: $background-secondary-color;
-    font-family: $font-description;
+    font-family: $font-principal;
     text-transform: uppercase;
+	font-weight: $bold;
 }
 .card-img {
 	height: 300px;
 }
+
+@media screen and (max-width:992px) {
+	nav {
+		height: 100% !important;
+		width: 100% !important;
+	}
+	.navbar {
+		font-size: $small2;
+	}
+	.fontMainContainer {
+		font-size: $small2;
+	}
+	.servicios {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		justify-items: center;
+		text-align: center;
+		margin-top: 60px;
+		font-size: $small2;
+		color: $color-secondary;
+		div {
+			width: 80%;
+		}
+	}
+	h2 {
+		font-size: $small;
+	}
+	h3 {
+		font-size: $medium;
+	}
+	h4 {
+		font-size: $medium;
+	}
+}
+@media screen and (min-width:360px) and (max-width:576px) {
+	nav {
+		height: 100% !important;
+		width: 100% !important;
+	}
+	.navbar {
+		font-size: $extrasmall;
+	}
+	.showcase {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		img {
+			width: 60%;
+		}
+	}
+
+	h1{
+		font-size: small2;
+	}
+	.fontMainContainer {
+		font-size: $small2;
+	}
+	.servicios {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		justify-items: center;
+		text-align: center;
+		margin-top: 60px;
+		font-size: $small2;
+		color: $color-secondary;
+		div {
+			width: 50%;
+		}
+	}
+	h2{
+		font-size: $small2;
+	}
+	h3 {
+		font-size: $medium2;
+	}
+	h4 {
+		font-size: $medium2;
+	}
+
+	footer {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.footer-right {
+		margin-left: 20px;
+	}
+	.footer-left {
+		font-size: $extrasmall;
+	}
+
+	.footer-right{
+		font-size: $small;
+	}
+} 

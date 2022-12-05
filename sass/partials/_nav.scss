@@ -1,23 +1,28 @@
 .navbar {
 	height: 100px;
+	font-size: $small2;
 }
 #navColor {
 	background-color: $color-primary;
 }
 .nav-link {
-	padding-left: 8px;
-	padding-right: 8px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+nav {
+	svg {
+		margin: 5px;
+	}
 }
 a {
 	color: $color-secondary;
 	&:hover {
-		font-size: large;
-		padding: 0;
+		padding: 4px;
 	}
 }
 .colorNavLink {
 	&:hover {
 		color: $color-hover;
-		font-weight: bold;
+		font-weight: $bold;
 	}
 }

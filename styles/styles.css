@@ -15,6 +15,7 @@ body{
 /* ---------------------NAV--------------------- */
 .navbar{
     height: 100px;
+    font-size: 18px;
 }
 
 #navColor{
@@ -23,6 +24,10 @@ body{
 .nav-link{
    padding-left: 8px;
    padding-right: 8px;
+}
+
+nav svg{
+    margin: 5px;
 }
 a{
     color:white;
@@ -33,19 +38,20 @@ a{
 }
 
 a:hover{
-    font-size: large;
-    padding: 0;
+    padding: 0px;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/*HEADER*/
+
+.showcase{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 2px;
+    gap: 2px;
 }
 
-.imgHeader{
-    height: 500px;
-    padding-top: 3%;
+.showcase img{
+    width: 100%;
 }
 
 /*---------------MAIN--------------*/
@@ -58,11 +64,35 @@ h1{
     font-weight: bold;
 }
 
+/*SECTION SERVICIOS*/
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+}
+
 h2{
-    font-size: 28px;
-    color: #1b4a6d;
+    font-size: 25px;
+    color:white;
     font-weight: bold;
     font-family: "Faustina";
+    margin-bottom: 20px;
+}
+
+.servicios div{
+    width: 90%;
+    background-color: #1b4a6d;
+    border-radius: 6px;
+}
+
+.servicios p{
+    line-height: 1;
 }
 
 h3{
@@ -86,7 +116,7 @@ h4{
 }
 
 .carousel-item:hover{
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .carouselText{
@@ -100,7 +130,7 @@ h4{
 }
 
 .card:hover{
-        transform: scale(1.2,1.2);
+        transform: scale(1.1,1.1);
 }
 
 .card-title{
@@ -117,86 +147,186 @@ h4{
 
 /*---------------------FOOTER-------------------*/
 footer{
-    margin-top: 80px;
+    margin-top: 50px;
     background-color: #1b4a6d;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     color: white;
+    padding-bottom: 20px;
+}
+
+.contactanos{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 95%;
+    justify-items: center;
+    border: 4px solid white;
+    padding: 10px;
 }
 
 textarea{
     resize: none;
 }
 
-#contactFooter{
-   font-size: 40px;
-   font-family: "Faustina";
-}
-
 .inputFormAspects:focus{
     background-color: #d2c6b6;
     font-size: 20px;
     font-weight: bold;
-    height: 70px;
 }
 
 .textAreaFormAspects:focus{
     background-color: #d2c6b6;
     font-size: 20px;
     font-weight: bold;
-    height: 300px;
 }
 
-#text-allRigts{
-    padding-top: 30px;
+.form-sup{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+form button{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-left{
+    margin-left: 30px;
+}
+.footer-items-left p{
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    width: 70%;
+}
+
+#homes{
+    background-color: white;
+    color: #1b4a6d;
+    font-weight: bold;
+}
+
+.footer-left{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-center{
+    background-color: #1b4a6d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-center p{
+    text-align: center;
     font-size: 12px;
 }
 
-svg{
-    justify-content: center;
-}
+
 
 @media screen and (max-width:992px){
     nav{
         height: 100%!important;
         width: 100%!important;
-     }
-    .spanNav{
-        display: none;
-     }
-    .nav-link{
-        align-items: center!important;
     }
+
+    .navbar{
+        font-size: 16px;
+    }
+
     .fontMainContainer{
-        font-size: 18px!important;
+        font-size: 18px;
     }
+
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .servicios div{
+        width: 80%;
+    }
+
     h2{
-        font-size: 20px!important;
+        font-size: 20px;
     }
     h3{
-        font-size: 35px!important;
+        font-size: 35px;
     }
     h4{
-        font-size: 35px!important;
+        font-size: 35px;
     }
 }
 
- @media screen and (max-width:576px){
+ @media screen and (min-width:380px) and (max-width:576px){
     nav{
        height: 100%!important;
        width: 100%!important;
     }
-    .spanNav{
-        display: none;
-     }
-    .nav-link{
-        align-items: center!important;
+
+    .navbar{
+        font-size: 16px;
+    }
+
+    .showcase{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .showcase img{
+        width: 60%;
     }
     .fontMainContainer{
-        font-size: 18px!important;
+        font-size: 18px;
     }
+
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .servicios div{
+        width: 50%;
+    }
+
     h3{
         font-size: 35px!important;
     }
     h4{
         font-size: 35px!important;
+    }
+
+    footer{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-right{
+        margin-left: 20px;
+    }
+
+    .footer-left{
+        font-size: 16px;
     }
 }   

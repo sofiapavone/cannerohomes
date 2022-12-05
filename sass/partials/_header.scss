@@ -1,10 +1,9 @@
-
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.imgHeader {
-	height: 500px;
-	padding-top: 3%;
+.showcase {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	padding-top: 2px;
+	gap: 2px;
+	img {
+		width: 100%;
+	}
 }

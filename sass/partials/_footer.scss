@@ -1,21 +1,40 @@
 footer {
-	margin-top: 80px;
+	margin-top: 50px;
 	background-color: $color-primary;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	color: $color-secondary;
+	padding-bottom: 20px;
+}
+
+.contactanos {
+	color: $color-secondary;
+	text-transform: uppercase;
+	font-size: $medium;
+	margin-bottom: 40px;
+}
+form {
+	width: 95%;
+	justify-items: center;
+	border: 4px solid $color-secondary;
+	padding: 10px;
+
+	button {
+		@mixin flex ($row, $center, $center) {
+		width: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
 }
 textarea {
 	resize: none;
 }
-#contactFooter {
-	font-size: 40px;
-	font-family: $font-principal;
-}
 .inputFormAspects {
 	&:focus {
 		background-color: $label-color;
-		font-size: $small;
-		font-weight: $bold;
-		height: 70px;
+		font-size: 20px;
+		font-weight: bold;
 	}
 }
 .textAreaFormAspects {
@@ -23,14 +42,38 @@ textarea {
 		background-color: $label-color;
 		font-size: $small;
 		font-weight: $bold;
-		height: 300px;
 	}
 }
-#text-allRigts {
-	padding-top: 30px;
-	font-size: $extrasmall;
+.form-sup {
+	display: flex;
+	flex-direction: row;
+	gap: 2px;
 }
-
-svg {
-	justify-content: center;
+.footer-left {
+	margin-left: 30px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.footer-items-left {
+	p {
+		font-size: $medium;
+		border-bottom: 2px solid $color-secondary;
+		padding-bottom: 20px;
+		width: 70%;
+	}
+}
+#homes {
+	background-color: $color-secondary;
+	color: $color-primary;
+	font-weight: $bold;
+}
+.footer-center {
+	background-color: $color-primary;
+	color: $color-secondary;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	p {
+		text-align: center;
+		font-size: $extrasmall;
+	}
 }

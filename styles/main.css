@@ -19,69 +19,40 @@ a {
   color: white;
   font-family: "Noto Sans Display", sans-serif; }
 
-@media screen and (max-width: 992px) {
-  nav {
-    height: 100% !important;
-    width: 100% !important; }
-  .spanNav {
-    display: none; }
-  .nav-link {
-    align-items: center !important; }
-  .fontMainContainer {
-    font-size: 18px !important; }
-  h2 {
-    font-size: 20px !important; }
-  h3 {
-    font-size: 35px !important; }
-  h4 {
-    font-size: 35px !important; } }
-
-@media screen and (max-width: 576px) {
-  nav {
-    height: 100% !important;
-    width: 100% !important; }
-  .spanNav {
-    display: none; }
-  .nav-link {
-    align-items: center !important; }
-  .fontMainContainer {
-    font-size: 18px !important; }
-  h3 {
-    font-size: 35px !important; }
-  h4 {
-    font-size: 35px !important; } }
-
+/*BREAKPOINTS*/
 /*MIXINS*/
 /*NAV*/
 .navbar {
-  height: 100px; }
+  height: 100px;
+  font-size: 18px; }
 
 #navColor {
   background-color: #1b4a6d; }
 
 .nav-link {
-  padding-left: 8px;
-  padding-right: 8px; }
+  padding-left: 9px;
+  padding-right: 9px; }
+
+nav svg {
+  margin: 5px; }
 
 a {
   color: white; }
   a:hover {
-    font-size: large;
-    padding: 0; }
+    padding: 4px; }
 
 .colorNavLink:hover {
   color: #99c3e4;
   font-weight: bold; }
 
 /*HEADER*/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.imgHeader {
-  height: 500px;
-  padding-top: 3%; }
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2px;
+  gap: 2px; }
+  .showcase img {
+    width: 100%; }
 
 /*HOME*/
 .fontMainContainer {
@@ -91,11 +62,30 @@ h1 {
   color: #1b4a6d;
   font-weight: bold; }
 
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+  color: white;
+  gap: 10px; }
+
+.servicios div {
+  width: 90%;
+  background-color: #1b4a6d;
+  border-radius: 6px; }
+
+.servicios p {
+  line-height: 1; }
+
 h2 {
-  font-size: 28px;
-  color: #1b4a6d;
+  font-size: 25px;
+  color: white;
   font-weight: bold;
-  font-family: "Noto Sans Display", sans-serif; }
+  font-family: "Noto Sans Display", sans-serif;
+  margin-bottom: 20px; }
 
 h3 {
   color: #1b4a6d;
@@ -115,59 +105,166 @@ h4 {
   transition: font-size 25; }
 
 .carousel-item:hover {
-  font-size: 40px; }
+  font-size: 25px; }
 
 .carouselText {
   text-align: center;
   background-color: gray;
-  font-family: "Faustina";
-  text-transform: uppercase; }
+  font-family: "Noto Sans Display", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .imgSistemasConstructivos {
   height: 400px; }
 
 .card:hover {
-  transform: scale(1.2, 1.2); }
+  transform: scale(1.1, 1.1); }
 
 .card-title {
   position: relative;
   margin-top: 250px;
   color: white;
   background-color: gray;
-  font-family: "Faustina";
-  text-transform: uppercase; }
+  font-family: "Noto Sans Display", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .card-img {
   height: 300px; }
 
+@media screen and (max-width: 992px) {
+  nav {
+    height: 100% !important;
+    width: 100% !important; }
+  .navbar {
+    font-size: 18px; }
+  .fontMainContainer {
+    font-size: 18px; }
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    color: white; }
+    .servicios div {
+      width: 80%; }
+  h2 {
+    font-size: 20px; }
+  h3 {
+    font-size: 30px; }
+  h4 {
+    font-size: 30px; } }
+
+@media screen and (min-width: 360px) and (max-width: 576px) {
+  nav {
+    height: 100% !important;
+    width: 100% !important; }
+  .navbar {
+    font-size: 12px; }
+  .showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+    .showcase img {
+      width: 60%; }
+  h1 {
+    font-size: small2; }
+  .fontMainContainer {
+    font-size: 18px; }
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    color: white; }
+    .servicios div {
+      width: 50%; }
+  h2 {
+    font-size: 18px; }
+  h3 {
+    font-size: 25px; }
+  h4 {
+    font-size: 25px; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .footer-right {
+    margin-left: 20px; }
+  .footer-left {
+    font-size: 12px; }
+  .footer-right {
+    font-size: 20px; } }
+
 /*FOOTER*/
 footer {
-  margin-top: 80px;
+  margin-top: 50px;
   background-color: #1b4a6d;
-  color: white; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  padding-bottom: 20px; }
+
+.contactanos {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+form {
+  width: 95%;
+  justify-items: center;
+  border: 4px solid white;
+  padding: 10px; }
+  form button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px; }
 
 textarea {
   resize: none; }
 
-#contactFooter {
-  font-size: 40px;
-  font-family: "Noto Sans Display", sans-serif; }
-
 .inputFormAspects:focus {
   background-color: #d2c6b6;
   font-size: 20px;
-  font-weight: bold;
-  height: 70px; }
+  font-weight: bold; }
 
 .textAreaFormAspects:focus {
   background-color: #d2c6b6;
   font-size: 20px;
-  font-weight: bold;
-  height: 300px; }
+  font-weight: bold; }
 
-#text-allRigts {
-  padding-top: 30px;
-  font-size: 12px; }
+.form-sup {
+  display: flex;
+  flex-direction: row;
+  gap: 2px; }
 
-svg {
-  justify-content: center; }
+.footer-left {
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.footer-items-left p {
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  width: 70%; }
+
+#homes {
+  background-color: white;
+  color: #1b4a6d;
+  font-weight: bold; }
+
+.footer-center {
+  background-color: #1b4a6d;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+  .footer-center p {
+    text-align: center;
+    font-size: 12px; }
